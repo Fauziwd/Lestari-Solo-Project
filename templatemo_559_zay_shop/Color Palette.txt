@@ -1,0 +1,6 @@
+Color palette Pastel
+Ijo Tosca: C8FFD4
+
+Gradient:
+merah: E17676
+merah agak putih: CC7F7F

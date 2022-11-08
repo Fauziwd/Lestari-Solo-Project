@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AyyaShop -Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Load map styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+
+<style>
+   .form-control {
+    border: 1px solid #a4aed9;
+}
+</style>
+
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:lestarisolo2@gmail.com">lestarisolo2@gmail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:0877-3473-2447">0877-3473-2447</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://www.facebook.com/Ayyapembalutkain?__cft__[0]=AZWEWyvZvzu4-GreJvWN2SUhz3kLdTtBNTLYmsRzZ18b6nwGu1uiW3wi7UmD7yxAQqMPZtiR26pUo_Xb0N30g5BtWDMI6_Am-4szCg9R0d9f4La_-fiNhwTMrHUs4jRVPixIK9efp57S1I8NkAJBFBOcnf3iTibJbxg9RaITEeZTkV6m3iCmtFSTUV9WzSrgQqk&__tn__=-UC%2CP-R" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/pembalutkainayya/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.tiktok.com/@lestarisolo1?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Ayya
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testi.html">testimonial</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    
+
+    <!-- Start Content Page -->
+    <div class="container-fluid bg-light py-5">
+        <div class="col-md-6 m-auto text-center">
+            <h1 class="h1">Contact Us</h1>
+            <p>
+                Info lebih lanjut bisa menghubungi ke nomor kami, kami menerima kritik dan saran serta 
+                masukan dari para customer semua.
+            </p>
+        </div>
+    </div>
+
+    <!-- Start Map -->
+    <div id="mapid" style""></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8614139465594!2d110.79526371728963!3d-7.590059262139259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a15e764a674ab%3A0x2ed9c2205b795360!2sLestari%20Solo%20Olshop!5e0!3m2!1sen!2sid!4v1666453729067!5m2!1sen!2sid" width="1345" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Ena Map -->
+
+    <!-- Start Contact -->
+    <div class="container py-5">
+        <div class="row py-5">
+            <form class="col-md-9 m-auto" method="post" role="form">
+                <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="inputname">Name</label>
+                        <input type="text" class="form-control mt-1 nama" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="inputemail">Email</label>
+                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputsubject">Subject</label>
+                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject">
+                </div>
+                <div class="mb-3">
+                    <label for="inputmessage">Message</label>
+                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Message" rows="8"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col text-end mt-2">
+                        <button type="submit" class="btn btn-success btn-lg px-3">Let’s Talk</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Contact -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Ayya Menspad</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                           <a href="https://goo.gl/maps/S4QJdzm1sYASDFNW9" style="text-decoration:none"> Lestari Solo Olshop
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:0877-3473-2447"> 0877-3473-2447</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="lestarisolo2@gmail.com">lestarisolo2@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="https://shopee.co.id/Clodi-Ayya-JUMBO-(ANAK)-muuraah!!(1-celana-2-insert)-i.19128537.722957465?sp_atk=24a454f8-8e76-4c25-ae46-0f7b18ae9b80&xptdk=24a454f8-8e76-4c25-ae46-0f7b18ae9b80">Clody Anak</a></li>
+                        <li><a class="text-decoration-none" href="https://shopee.co.id/Clody-Dewasa-Lansia-(celana-saja)-i.19128537.3455286561?sp_atk=c009bcaa-78ca-4827-b640-9a75bd65d570&xptdk=c009bcaa-78ca-4827-b640-9a75bd65d570">Clody Lansia</a></li>
+                        <li><a class="text-decoration-none" href="https://shopee.co.id/Ayya-menspad-katun-lembut-mix-day-night-panty-(6-lembar)-i.19128537.197291171?sp_atk=62911302-c055-40e9-8767-29e8309b391a&xptdk=62911302-c055-40e9-8767-29e8309b391a">Menspad Classic Type</a></li>
+                        <li><a class="text-decoration-none" href="https://shopee.co.id/Ayya-Bintang-INNER-FLEECE-NIGHT(isi-6)-SPUNBUN-i.19128537.389809079?sp_atk=086b9780-349f-410c-894a-96354e2ecd45&xptdk=086b9780-349f-410c-894a-96354e2ecd45">Menspad Bintang Type (spoonbun)</a></li>
+                        <li><a class="text-decoration-none" href="https://shopee.co.id/Ayya-menspad-overnight(special-for-maternity)-i.19128537.196548788?sp_atk=3ae2303d-4ad2-4259-9888-d31f98df64cd&xptdk=3ae2303d-4ad2-4259-9888-d31f98df64cd">Menspad Bintang Type (cotton)</a></li>
+                       
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Inpo-Inpo</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="index.html">Home</a></li>
+                        <li><a class="text-decoration-none" href="about.html">About Us</a></li>
+                        <li><a class="text-decoration-none" href="https://goo.gl/maps/HMX7GxrMJDnoPw4M7">Shop Locations</a></li>
+                        <li><a class="text-decoration-none" href="about.html">FAQs</a></li>
+                        <li><a class="text-decoration-none" href="wa.me/6287734732447">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/Ayyapembalutkain?__cft__[0]=AZWEWyvZvzu4-GreJvWN2SUhz3kLdTtBNTLYmsRzZ18b6nwGu1uiW3wi7UmD7yxAQqMPZtiR26pUo_Xb0N30g5BtWDMI6_Am-4szCg9R0d9f4La_-fiNhwTMrHUs4jRVPixIK9efp57S1I8NkAJBFBOcnf3iTibJbxg9RaITEeZTkV6m3iCmtFSTUV9WzSrgQqk&__tn__=-UC%2CP-R"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/pembalutkainayya/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.tiktok.com/@lestarisolo1?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok fa-lg fa-fw"></i></a>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2022 Ayya Solo 
+                            | Designed by <a rel="sponsored" href="https://fauziiwdcv.netlify.app" target="_blank">Fauziiwd</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>
